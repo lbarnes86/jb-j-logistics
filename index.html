@@ -212,8 +212,11 @@ alt="Company logo" class="navigation-logo-image-2"></a>
         <section id="subscribe-form" class="subscribe-form wf-section">
           <div class="centered-container w-container">
             <div class="w-form">
-              <form id="wf-form-Subscribe-Form" name="wf-form-Subscribe-Form" data-name="Subscribe Form" method="get" class="subscribe-form-flex">
-                <div class="subscribe-form-input-wrapper"><input type="email" class="subscribe-form-input w-input" maxlength="256" name="Subscriber-Email" data-name="Subscriber Email" placeholder="Your email..." id="Subscriber-Email" required=""></div><input type="submit" value="Send" data-wait="Please wait..." class="button subscribe-button w-button">
+              <form  action="https://formspree.io/f/mpzbkyvl" method="POST" id="wf-form-Subscribe-Form" name="wf-form-Subscribe-Form" data-name="Subscribe Form" class="subscribe-form-flex">
+                <div class="subscribe-form-input-wrapper">
+                  <input type="email" class="subscribe-form-input w-input" maxlength="256" name="Subscriber-Email" data-name="Subscriber Email" placeholder="Your email..." id="Subscriber-Email" required="">
+                </div>
+                <input type="submit" value="Send" data-wait="Please wait..." class="button subscribe-button w-button">
               </form>
               <div class="w-form-done">
                 <div>Thank you! Your submission has been received!</div>
@@ -314,12 +317,12 @@ alt="Company logo" class="navigation-logo-image-2"></a>
         <div class="w-container">
           <h3 class="form-title">Need to Make an Enquiry?</h3>
           <div class="w-form">
-            <form id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" method="get">
+            <form  action="https://formspree.io/f/mpzbkyvl" method="POST" id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" method="get">
               <div class="contact-form-grid">
                 <div id="w-node-_41b234a8-b1c0-11c9-82b5-afd81dc05508-31b28439" class="input-container"><input type="text" class="base-form-field w-input" maxlength="256" name="First-Name" data-name="First Name" placeholder="Your name*" id="First-Name" required=""></div>
                 <div id="w-node-_5b0b61f2-b1bc-c554-e5e4-11e41d25d3f9-31b28439" class="input-container"><input type="text" class="base-form-field w-input" maxlength="256" name="Affiliation" data-name="Affiliation" placeholder="Business*" id="Affiliation" required=""></div>
-                <div id="w-node-_589d82e2-aa9a-8bd8-117b-3b5207342d16-31b28439" class="input-container"><input type="text" class="base-form-field w-input" maxlength="256" name="First-Name-2" data-name="First Name 2" placeholder="Email*" id="First-Name-2" required=""></div>
-                <div id="w-node-_41b234a8-b1c0-11c9-82b5-afd81dc0550c-31b28439" class="input-container"><input type="number" class="base-form-field w-input" maxlength="256" name="Last-Name" data-name="Last Name" placeholder="Number*" id="Last-Name" required=""></div>
+                <div id="w-node-_589d82e2-aa9a-8bd8-117b-3b5207342d16-31b28439" class="input-container"><input type="email" class="base-form-field w-input" maxlength="256" name="email" data-name="Email" placeholder="Email*" id="Email" required=""></div>
+                <div id="w-node-_41b234a8-b1c0-11c9-82b5-afd81dc0550c-31b28439" class="input-container"><input type="tel" class="base-form-field w-input" maxlength="256" name="phone" data-name="Phone" placeholder="Number*" id="Phone" required=""></div>
                 <!-- <div id="w-node-_41b234a8-b1c0-11c9-82b5-afd81dc05510-31b28439" class="form-select-container"><select id="field" name="field" required="" data-name="field" class="base-form-field w-select">
                     <option value="First">Website*</option>
                     <option value="Second">Website 1</option>
@@ -331,8 +334,13 @@ alt="Company logo" class="navigation-logo-image-2"></a>
                     <option value="Second">Department 2</option>
                   </select></div> -->
                 <!-- <div id="w-node-_41b234a8-b1c0-11c9-82b5-afd81dc05518-31b28439" class="input-container"><input type="text" class="base-form-field w-input" maxlength="256" name="topic" data-name="topic" placeholder="Topic*" id="topic" required=""></div> -->
-                <div id="w-node-_281fa255-bd7f-cd43-d526-a9f1151d12a4-31b28439" class="teaxtarea"><textarea data-name="Message 2" maxlength="5000" id="Message-2" name="Message-2" placeholder="Your Massage" class="textarea-element w-input"></textarea></div>
-              </div><input type="submit" value="Submit Message" data-wait="Please wait..." class="submit-button button w-button">
+                <div id="w-node-_281fa255-bd7f-cd43-d526-a9f1151d12a4-31b28439" class="teaxtarea">
+                  <textarea data-name="Message 2" maxlength="5000" id="Message-2" name="Message-2" placeholder="Your Massage" class="textarea-element w-input">
+
+                  </textarea>
+                </div>
+              </div>
+              <input type="submit" value="Submit Message" data-wait="Please wait..." class="submit-button button w-button">
             </form>
             <div class="w-form-done">
               <div>Thank you! Your submission has been received!</div>
@@ -621,8 +629,12 @@ alt="Company logo" class="navigation-logo-image-2"></a>
       </div>
       <div class="bottom-subscribe-form">
         <div class="form-block w-form">
-          <form id="email-form" name="email-form" data-name="Email Form" method="get" class="subscribe-form-flex">
-            <div class="subscribe-form-input-wrapper"><input type="email" class="subscribe-form-input w-input" maxlength="256" name="Subscriber-Email-2" data-name="Subscriber Email 2" placeholder="Your email address..." id="Subscriber-Email-2" required=""></div><input type="submit" value="Subscribe" data-wait="Please wait..." class="button subscribe-button-2 w-button">
+          <form  action="https://formspree.io/f/mpzbkyvl"
+          method="POST" id="email-form" name="email-form" data-name="Email Form" class="subscribe-form-flex">
+            <div class="subscribe-form-input-wrapper">
+              <input type="email" class="subscribe-form-input w-input" maxlength="256" name="email" data-name="Subscriber Email 2" placeholder="Your email address..." id="Subscriber-Email-2" required="">
+            </div>
+            <input type="submit" value="Subscribe" data-wait="Please wait..." class="button subscribe-button-2 w-button">
           </form>
           <div class="w-form-done">
             <div>Thank you! Your submission has been received!</div>
